@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="bg">
+      <nav class="bg-black-900 text-white-50 fixed-top px-6 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+      
+      <!-- Logo -->
+      <img src="image/WhatsApp_Image_2025-08-19_at_20.31.54-removebg-preview.png" style="filter: sepia(100%) saturate(400%) hue-rotate(10deg) brightness(95%) contrast(120%);" width="40px" class="navbar-brand fw-bold" alt="img error" href="#">
+
+
+      <!-- Menu (desktop) -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#services" class="hover:text-blue-400">Services</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </div>
+
+      <!-- Button mobile -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2 px-6">
+      <a href="#home" class="block hover:text-blue-400">Home</a>
+      <a href="#about" class="block hover:text-blue-400">About</a>
+      <a href="#services" class="block hover:text-blue-400">Services</a>
+      <a href="#contact" class="block hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <section id="home" class=" d-flex align-items-center justify-content-center text-light" style="padding-top: 70px;">
+      <div class="row align-items-center" data-aos="fade-up">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="mx-auto px-3 px-md-5" style="max-width: 1140px;">
+            <p class="mt-5 fs-3 gold-text" >Web Development</p>
+            <p class="text-light">Di era digital, website bukan lagi sekadar kebutuhan tambahan, melainkan bagian penting dari identitas bisnis. Golden Bintang menghadirkan layanan web development profesional yang dirancang untuk meningkatkan kredibilitas, mempermudah interaksi, serta memperluas jangkauan bisnis Anda.</p>
+            <p class="mb-4 text-light">Kami menyediakan website modern, responsif, aman, dan sesuai kebutuhan — mulai dari company profile, toko online, hingga sistem berbasis web. Dengan dukungan tim berpengalaman, kami siap membantu mewujudkan website yang tidak hanya indah dipandang, tetapi juga efektif dalam mendukung pertumbuhan bisnis Anda.</p>
+            <a role="button" href="#" class="btn btn-gold-outline mb-5">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center p-0 mb-5 mt-5">
+          <img src="image/Cuplikan_layar_2025-08-19_204957-removebg-preview.png" class="float-end  img-fluid img-spin" 
+          alt="Web Development Image"
+          style="max-height: 350px; object-fit: contain;">
+        </div>
+      </div>
+    </section>
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>🔥 Welcome to My Website 🔥</span>
+        <span>✨ Discover Amazing Features ✨</span>
+        <span>💎 Golden Bintang 💎</span>
+        <span>🚀 Fast & Responsive 🚀</span>
+      </div>
+    </div>
+  </div>
+  <div class="bo">
+    <div class="container mt-5" id="about">
+      <div class="card bg-black">
+        <section class="trusted-section mb-5" data-aos="fade-up">
+          <p class="text text-light mb-0">About us</p>
+          <p class="gold-text text-light mb-0" style="text-align: center;">- - - - -</p>
+          <p style="text-align: center;" class="text-light mb-xl-5">Building Digital Solutions for the Future</p>
+          <div class="row">
+            <div class="col-md-5 text-center mb-md-0">
+              <div class="flex justify-center">
+                <img src="image/image copy 5.png" width="400px" class="mt-4 mb-4" alt="image error">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <p class="text-light mt-4 overflow-auto" style="text-align: start;">With two years of experience specifically 
+                in graphic design and web development, I'm accustomed to working on visual designs for branding,
+                social media, brand identity, and developing websites with a modern and functional appearance. 
+                My focus is on creating creative visual designs and developing websites that are responsive, 
+                efficient, and tailored to user needs. With this background, I'm ready to contribute to 
+                providing effective digital solutions.</p>
+                  
+              <div class="flex justify-center items-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 mb-4">
+                  <div class="max-w-sm rounded-2xl overflow-hidden shadow-sm border p-4">
+                    <img class="w-10 object-cover" src="image/image copy 8.png" width="30px" alt="Card image">
+                    <div class="p-1 text-light">
+                      <h3 class="mt-4 text-lg-start font-semibold text-gray-900 text-white">Specialist</h3>
+                      <p class="mt-3 text-gray-600 text-sm-start text-white/80">
+                        Logo & Brand Identity, UI/UX Design, Web Development
+                      </p>
+                    </div>
+                  </div>
+                  <div class="max-w-sm rounded-2xl overflow-hidden shadow-sm border p-4">
+                    <img class="w-10 object-cover" src="image/image copy 9.png" width="30px" alt="Card image">
+                    
+                    <div class="p-1 text-light">
+                      <h3 class="mt-4 text-lg-start font-semibold text-gray-900 text-white text-wrap">Tools Marketing</h3>
+                      <p class="mt-3 text-gray-600 text-sm-start text-white/80">
+                        Meta bussines Suite (Social Media Marketing), Canva Figma Capcut (Content Creator & Design)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="max-w-sm rounded-2xl overflow-hidden shadow-sm border p-4">
+                    <img class="w-10 object-cover" src="image/image copy 10.png" width="30px" alt="Card image">
+                    
+                    <div class="p-1 text-light">
+                      <h3 class="mt-4 text-lg-start font-semibold text-gray-900 text-white">Projects</h3>
+                      <p class="mt-3 text-gray-600 text-sm-start text-white/80">
+                        More Than 15+
+                        designs with 12+ and
+                        3+ website
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  
+              <hr>
+                    
+              <p style="text-align: start;" class="text-light mt-4">Kenali lebih dekat perjalanan kami dan mari tumbuh bersama.</p>
+              <a href="#" type="button" class="btn btn-gold-outline mx-auto mt-3 justify-end">Hubungi Kami</a>
+                      
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>   
+  <div class="be">
+    <div class="marquee mb-5">
+      <div class="marquee-content">
+        <span>🔥 Welcome to my website and enjoy 🔥</span>
+      </div>
+    </div>
+
+    <div id="services" class="container mb-5 px-4">
+      <p class="text-center text-light fw-bold" style="font-size: x-large;" data-aos="fade-up">Services</p>
+      <p class="text-center text-light  wrap-text" data-aos="fade-up">Golden Bintang hadir sebagai solusi digital yang lengkap untuk mendukung perkembangan bisnis Anda di era modern. Kami menyediakan layanan Web Development profesional untuk menciptakan website yang modern, responsif, dan aman — mulai dari company profile, toko online, hingga sistem berbasis web.</p>
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] justify-center gap-6 my-10
+      place-items-center" style="opacity: 1;" data-aos="fade-up">
+          <div class="border border-gray-400 rounded-xl p-3 cursor-pointer 
+          hover:bg-lightHover hover:-translate-y-1 duration-200 hover:shadow-black text-light
+          dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 active:scale-95" style="width: 9rem;">
+          <img src="image/image copy 13.png" alt="image service" class="mt-1" width="40px" loading="lazy" decoding="async" data-nimg="1" class="w-10" style="color: transparent;">  
+          <h3 class="font-semibold text-white mt-5" style="text-align: start;">Brand Identity</h3>
+          <p class="mt-3 text-gray-600 text-sm-start text-white/80 text-wrap">I create a unique 
+          visual identity that defines your brand and is easy to remember.</p>
+          <a class="icon-link icon-link-hover mt-3" href="#">
+            Icon link
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+          </div>
+          <div class="border border-gray-400 rounded-xl p-3 cursor-pointer 
+          hover:bg-lightHover hover:-translate-y-1 duration-200 hover:shadow-black text-light
+          dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 active:scale-95" style="width: 9rem;">
+            <img src="image/image copy 14.png" alt="image service" class="mt-1" width="40px" loading="lazy" decoding="async" data-nimg="1" class="w-10" style="color: transparent;">  
+            <h3 class="font-semibold text-white mt-5" style="text-align: start;">Graphic Design</h3>
+            <p class="mt-3 text-gray-600 text-sm-start text-white/80 text-wrap">I create attractive visuals, from logos as 
+              brand definitions to designs for marketing.</p>
+            <a class="icon-link icon-link-hover mt-3" href="#">
+              Icon link
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="border border-gray-400 rounded-xl p-3 cursor-pointer 
+          hover:bg-lightHover hover:-translate-y-1 duration-200 hover:shadow-black text-light
+          dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 active:scale-95" style="width: 9rem;">
+            <img src="image/image copy 15.png" alt="image service" class="mt-1" width="40px" loading="lazy" decoding="async" data-nimg="1" class="w-10" style="color: transparent;">  
+            <h3 class="font-semibold text-white mt-5" style="text-align: start;">UI/UX Design</h3>
+            <p class="mt-3 text-gray-600 text-sm-start text-white/80 text-wrap">I design from the appearance to the flow of the website before it becomes a usable website.</p>
+            <a class="icon-link icon-link-hover mt-3" href="#">
+              Icon link
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="border border-gray-400 rounded-xl p-3 cursor-pointer 
+          hover:bg-lightHover hover:-translate-y-1 duration-200 hover:shadow-black text-light
+          dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50 active:scale-95" style="width: 9rem;">
+            <img src="image/image copy 16.png" alt="image service" class="mt-1 w-10" width="40px" loading="lazy" decoding="async" data-nimg="1" style="color: transparent;">  
+            <h3 class="font-semibold text-white mt-4" style="text-align: start;">Web Development</h3>
+            <p class="mt-3 text-gray-600 text-sm-start text-white/80 text-wrap">I made it responsive, and the website's high performance meets your desired criteria.</p>
+            <a class="icon-link icon-link-hover mt-3" href="#">
+              Icon link
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="trusted-section mt-5 mb-5" id="contact" data-aos="fade-up">
+      <h1 style="color: white; text-align:center; font-size: xx-large;" class="mt-3">We Provide Quality Services</h1>
+      <p style="color: white; text-align:center;" class="wrap-text mt-lg-3">Kami bukan hanya membuat website, tapi membangun solusi digital yang bikin bisnis Anda naik kelas.</p>
+      <div class="contact d-flex align-items-center mt-4">
+        <img src="image/image copy 4.png"  alt="image" style="width:20px; height:auto;" class="float-end mt-2">
+        <p class=" text-light text-start mt-2">+62 851-7992-5853</p>
+      </div>
+      <div style="text-align: center;" class="mt-3">
+        <a class="btn btn-blao-outline contect transition ease-in-out active:scale-95 duration-200 hover:-translate-y-1" href="https://wa.me/+6285179925853">Contact Me</a>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="row mt-5 text-center justify-content-center items-stretch mg" data-aos="fade-up">
+      <div class="col-sm-4 mb-4">
+        <div class="card">
+          <div class="card-body card-body d-flex flex-column justify-content-between text-light opacity-90 rounded-3">
+            <h5 class="card-title">UI/UX Design</h5>
+            <p class="card-text text-wrap mt-3">Kami menghadirkan desain yang bukan hanya indah dipandang, tapi juga nyaman digunakan. Setiap elemen dirancang untuk menciptakan pengalaman pengguna yang menyenangkan, sehingga website Anda mampu membuat pengunjung.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body card-body d-flex flex-column justify-content-between text-light opacity-90 rounded-3">
+            <h5 class="card-title">Front-end Developer</h5>
+            <p class="card-text text-wrap mt-3">Tampilan adalah kesan pertama. Dengan teknologi terkini, kami membangun website yang responsif, modern, dan interaktif. Hasilnya? Website Anda tampil elegan di semua perangkat, dari smartphone hingga desktop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 text-center justify-content-center items-stretch" data-aos="fade-up">
+      <div class="col-sm-4 mb-4">
+        <div class="card">
+          <div class="card-body card-body d-flex flex-column justify-content-between text-light opacity-90 rounded-3 ">
+            <h5 class="card-title">Full-Stack Development</h5>
+            <p class="card-text text-wrap mt-3">Kami bukan hanya fokus pada tampilan, tapi juga sistem di balik layar. Mulai dari desain, pengembangan database, hingga keamanan website, semua kami kerjakan untuk memastikan bisnis digital Anda berjalan lancar dan scalable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4"><div class="card">
+        <div class="card-body card-body d-flex flex-column justify-content-between text-light opacity-90 rounded-3">
+          <h5 class="card-title">Logo Design</h5>
+          <p class="card-text text-wrap mt-3">Sebuah logo bukan hanya gambar, tapi identitas brand yang akan melekat di benak pelanggan. Kami merancang logo yang unik, profesional, dan memiliki makna, agar bisnis Anda tampil menonjol di tengah persaingan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container grid px-4 mx-auto text-light mt-5 aspect-[11/12] mb-5" data-aos="fade-up">
+  <h3 class="text-center text-light" data-aos="fade-up">Portofolio</h3>
+  <p class="text-wrap text-center" style="text-align: center;" data-aos="fade-up">Welcome to my portfolio website, explore the collection of results from my projects.</p>
+  <div class="grid grid-cols-1 justify-content-center align-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 dark:text-black mt-5" style="opacity: 1;">
+  <a href="/image/WhatsApp Image 2024-07-24 at 18.58.06.jpeg" target="_blank">
+    <div class="aspect-square p-3 mt-3 hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image:url('/image/WhatsApp%20Image%202024-07-24%20at%2018.58.06.jpeg')">
+      <div class="bg-white shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+          <h2 class="font-semibold">Brand Project</h2>
+          <p class="text-sm text-gray-700">Logo Design</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="/image/image copy 17.png" target="_blank">
+    <div class="aspect-square p-3 mt-3 hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image:url('/image/image\ copy\ 17.png')">
+      <div class="bg-white shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div class="">
+          <h2 class="font-semibold">Brand Project</h2>
+          <p class="text-sm text-gray-700">Logo Design</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="/image/image copy 18.png" target="_blank">
+    <div class="aspect-square p-3 mt-3 hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image:url('/image/image\ copy\ 18.png')">
+      <div class="bg-white shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div class="">
+          <h2 class="font-semibold">Brand Project</h2>
+          <p class="text-sm text-gray-700">Logo Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+    <div class="grid justify-center grid-cols-1 sm:grid-cols-2 gap-4 dark:text-black mt-4" style="opacity: 1;">
+      <a href="/image/soft shadow.png" target="_blank">
+      <div class="relative hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full aspect-[1/1.17]" style="background-image:url('/image/soft\ shadow.png');">
+      <div class="bg-white shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div class="">
+          <h2 class="font-semibold">Menu Project</h2>
+          <p class="text-sm text-gray-700">Logo Design</p>
+        </div>
+      </div>
+    </div>
+  </a>
+    <div class="flex-col justify-between" style="margin-bottom: 70px;">
+      <a href="/image/JUS JERUK SEGAR.png" target="_blank">
+      <div class="relative mb-4 hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full aspect-[16/9]" style="background-image:url('/image/JUS\ JERUK\ SEGAR.png');">
+        <div class="bg-white shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div class="">  
+            <h2 class="font-semibold">Menu Project</h2>
+            <p class="text-sm text-gray-700">Logo Design</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="/image/DESIGNER GRAFIS.png" target="_blank">
+    <div class="relative hover:-translate-y-2 hover:scale-105 duration-300 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-full aspect-[16/9]" style="background-image:url('/image/DESIGNER\ GRAFIS.png');">
+      <div class="bg-white p-6 mt-5 shadow-lg w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div class="">
+          <h2 class="font-semibold">Menu Project</h2>
+          <p class="text-sm text-gray-700">Logo Design</p>
+        </div>
+      </div>
+    </div>
+  </a>
+      </div>
+    </div>
+  </div>
+  <div class="container justify-content-center text mb-5 mt-5">
+    <div class="flex justify-center items-center text-light text-center mt-5 fw-semibold" style="font-size: 25px;"><h4 style="color: gold;" class="text-center">Golden</h4><h4 class="text-center ml-2">Bintang</h4></div>
+    <div class="w-max flex items-center gap-2 mx-auto text-light mb-5">
+      <img src="/image/icons8-mail-100.png" width="34" height="17" alt="">
+      <p class="font-britany text-4xl fs-5">
+        bintangabadisatria@gmail.com
+      </p>
+    </div>
+  </div>
+
+<footer class="border-t border-gray-400 mx-[10%] mt-12 py-6 text-light text-xs sm:text-sm">
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <!-- Copyright -->
+    <p class="text-center sm:text-left">© 2025 Lurry Putri. All rights reserved.</p>
+
+    <!-- Sosial Media -->
+    <ul class="flex items-center gap-6">
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Satria-webdevs"
+           class="hover:text-yellow-500 transition">Github</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/goldenbintang?igsh=MXFlYWZzeXo3YTM1cA=="
+           class="hover:text-pink-500 transition">Instagram</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://x.com/SatriaBint?t=dJQGN7DF-H18EnYjW5tfPQ&s=09"
+           class="hover:text-blue-400 transition">Twitter</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+<script>
+    const card = document.getElementById('card');
+
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * -6;
+      const rotateY = ((x - centerX) / centerX) * 6;
+
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,     
+    spaceBetween: 30,       
+    loop: true,             
+    autoplay: {
+      delay: 2500,         
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+
+<script>
+window.addEventListener("scroll", function() {
+  let navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("bg-dark", "shadow");
+    navbar.classList.remove("bg-transparent");
+  } else {
+    navbar.classList.remove("bg-dark", "shadow");
+    navbar.classList.add("bg-transparent");
+  }
+});
+</script>
+<script>
+    // Toggle mobile menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+</body>
+</html>

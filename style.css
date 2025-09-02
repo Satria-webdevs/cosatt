@@ -1,0 +1,453 @@
+.bg-gold-top-left {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse at top right, #1400ac 0.1%, #000 30%);
+}
+
+body {
+  background: radial-gradient(circle at 20% 30%, #0c0090, transparent 50%),
+              radial-gradient(circle at 80% 20%, #0c0090, transparent 50%),
+              radial-gradient(circle at 70% 80%, #0c0090, transparent 50%),
+              radial-gradient(circle at 30% 70%, #0c0090, transparent 50%),
+              #000000;
+  min-height: 100vh;
+}
+.bg {
+  position: relative;
+  min-height: 100vh;
+  background: #000000; /* base color */
+  overflow: hidden;
+}
+.be {
+  position: relative;
+  min-height: 100vh;
+  background: #000000; /* base color */
+  overflow: hidden;
+}
+
+.text {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.bg::before, 
+.bg::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #000a92, #000000);
+  filter: blur(150px);
+  opacity: 0.4;
+  border-radius: 50%;
+  filter: blur(50vh); 
+}
+.be::before, 
+.be::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #000a92, #000000);
+  filter: blur(150px);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.glow {
+  position:static;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #000a92, transparent);
+  filter: blur(120px);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+@keyframes float {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(30px, -30px); }
+  100% { transform: translate(0, 0); }
+}
+
+.glow {
+  animation: float 10s ease-in-out infinite;
+}
+
+.bg::before {
+  top: -100px;
+  left: -100px;
+
+}
+.be::before {
+  top: -100px;
+  left: -100px;
+
+}
+
+.bg::after {
+  bottom: -100px;
+  right: -100px;
+}
+.be::after {
+  bottom: -100px;
+  right: -100px;
+}
+
+.bo{
+  position: relative;
+  min-height: 100vh;
+  background: #000000; /* base color */
+  overflow: hidden;
+}
+
+.bo::after{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #0c0063, #000000);
+  filter: blur(150px);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.bo::after{
+  bottom: -100px;
+  right: -100px;
+}
+
+.ba{
+  position: relative;
+  min-height: 100vh;
+  background: #000000; /* base color */
+  overflow: hidden;
+}
+
+.ba::after{
+  left: -100px;
+}
+
+.ba::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #0c0063, #000000);
+  filter: blur(150px);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.img-spin {
+  object-fit: cover;
+  transform: perspective(600px) rotateY(-18deg) rotateX(8deg);
+  width: 450px; 
+  height: 350px;
+}
+.gold-text {
+  background: linear-gradient(45deg, #0c0063, #000a92, #0c0063);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.btn-gold-outline {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0c0063; /* warna teks emas */
+  background: transparent;
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #0c0063, #000a92, #0c0063) 1;
+  border-radius: 50px; /* biar lebih elegan */
+  cursor: pointer;
+  transition: all 0.4s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-blao-outline {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 2px solid #1300a1; 
+  color: #1300a1;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  border-radius: 12px !important; /* pakai !important kalau ada yang override */
+}
+
+.btn-blao-outline:hover {
+  background-color: #1300a1;     /* saat hover isi jadi emas */
+  color: #080041;               /* teks jadi kontras */
+}
+
+.gold {
+  background: linear-gradient(45deg, #1500b7, #0011fdc2, #1500b7);
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background: #030018;
+  padding: 10px 2px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%; /* mulai dari luar layar kanan */
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-content span {
+  margin-right: 50px; /* jarak antar teks */
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.79); /* hitam 79% */
+  color: #fff;
+  padding: 15px 30px;
+  opacity: 85%;
+}
+
+.card-body{
+  background-color: #000;
+  opacity: 93%;
+}
+
+.imge{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.scroll-x {
+  display: flex;
+  overflow-x: auto;        /* aktifkan scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* biar smooth di iOS/Android */
+  scroll-snap-type: x mandatory;     /* opsional: snap ke card */
+  gap: 1rem; /* kasih jarak antar card */
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none; /* sembunyikan scrollbar kalau mau clean */
+}
+.card-text {
+  flex-grow: 1; /* isi teks bebas memanjang */
+  overflow-wrap: break-word; /* kalau kata kepanjangan, dipotong ke bawah */
+}
+
+
+.cord {
+  flex: 0 0 auto;         /* biar card nggak mengecil */
+  scroll-snap-align: start;
+  height: auto !important;
+}
+
+.scroll-container {
+  width: auto !important;
+  height: auto !important;
+  overflow-x: scroll; /* bisa geser horizontal */
+  overflow-y: hidden; /* kalau mau hanya horizontal */
+  white-space: nowrap; /* biar item horizontal */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;  /* IE dan Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Untuk Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.wrap-text {
+  white-space: normal;   /* biar teks boleh turun ke bawah */
+  word-wrap: break-word; /* potong kata panjang */
+  overflow-wrap: break-word;
+}
+
+.row, .col, .container, .card {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.quantity{
+  background-image: url("image/image\ copy\ 3.png");
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  filter: blur();
+  position: relative;
+}
+
+.quantity::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* atas kanan bawah kiri = 0 */
+  background: rgba(0, 3, 18, 0.61); /* lapisan gelap transparan */
+}
+.quantity * {
+  position: relative; /* biar teks di atas overlay */
+}
+
+.wrap-text {
+  max-width: 450px;   /* batas lebar teks */
+  margin: 0 auto;     /* biar rata tengah */
+  word-wrap: break-word; /* kalau ada kata panjang pecah otomatis */
+  text-align: center; /* opsional */
+}
+
+.contact {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.contect {
+  align-items: center; 
+  justify-content: center;
+}
+
+.contact img {
+  margin-right: 8px;     /* kasih jarak antara icon dan teks */
+}
+
+.cardi {
+  background-color: black;
+}
+
+.crot {
+  height: 250px;
+}
+
+.mg {
+  margin-top: 100px ;
+}
+
+
+.trusted-section {
+  position: relative;
+  background: linear-gradient(180deg, #1a1a1a, #0d0d0d); /* gradasi gelap */
+  border-radius: 20px;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* efek glow ungu di atas */
+.trusted-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0, 15, 92, 0.696) 0%, transparent 70%);
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.trusted-section .content {
+  position: relative;
+  z-index: 1;
+}
+.truste-section {
+  position: relative;
+  background: linear-gradient(180deg, #1a1a1a, #0d0d0d); /* gradasi gelap */
+  border-radius: 20px;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.truste-section .content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.btn-div {
+  display: inline-block;
+  background: #000713;
+  color: #fff4f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-div:hover {
+  background: #000000;
+}
+.btn-div:active {
+  transform: scale(0.95);
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly; /* bisa space-between, around, evenly */
+  text-align: center;
+}
+.col {
+  flex: 1;
+  margin: 0 5px;
+  padding: 20px;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+}
+
+.hover-card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transform-style: preserve-3d;
+}
+
+    .hover-card:hover {
+      transform: rotateX(6deg) rotateY(-6deg) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .hover-card:focus-visible {
+      outline: 3px solid #a78bfa;
+      outline-offset: 4px;
+    }
+
+.tilt-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+    }
+
+    .tilt-card:hover {
+      transform: rotateX(6deg) rotateY(-6deg) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .tilt-card:focus-visible {
+      outline: 3px solid #a78bfa;
+    }
+
+@font-face {
+  font-family: 'BritanyStyle ';
+  src: url('/fonts/BritanyStyle.otf') format('truetype');
+}
+
